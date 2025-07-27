@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Services - My Business</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="service-gallery">
+  <img id="serviceImage" src="img1.jpg" alt="Service Image">
+</div>
+    </nav>
+  </header>
+
+  
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="service-box">
+    <h3>🎮 Game Reviews & Livestreams</h3>
+    <p>We dive deep into the hottest games — from classics to new releases — and bring you honest reviews, gameplay tips, and livestream content that entertains and informs.</p>
+  </div>
+  <div class="service-box">
+    <h3>💻 Web Development</h3>
+    <p>We build responsive, modern, and fast websites using HTML, CSS, JavaScript, and more. From portfolios to business sites, we code it all.</p>
+  </div>
+  <div class="service-box">
+    <h3>📚 Tech Tutorials</h3>
+    <p>Want to learn? We teach coding, game streaming, setup tips, and everything tech in simple, beginner-friendly language.</p>
+  </div>
+  <div class="service-box">
+    <h3>🧠 Project Consulting</h3>
+    <p>Need help with a tech or game-related project? We offer strategy, design feedback, and implementation advice tailored to your needs.</p>
+  </div>
+</section>
+
+<script>
+  const images = ['img1.jpg', 'img2.jpg', 'img3.jpg']; // replace with your image paths
+  let index = 0;
+  const imageElement = document.getElementById('serviceImage');
+
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    imageElement.src = images[index];
+  }, 3000);
+</script>
+  
+</body>
+</html>
