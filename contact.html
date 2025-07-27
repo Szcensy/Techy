@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - My Business</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Got a project in mind, a question to ask, or just want to say hello? <br>We’d love to hear from you! Drop your name, email, and a message we’ll get back to you as soon as we can.</p>
+  
+<form onsubmit="return showAlert()" action="#" method="post">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+<script>
+  function showAlert() {
+    alert("Thank you for your message, we'll get back to you soon 😊💓");
+    return false; // prevent form submission for now
+  }
+</script>
+</form>
+</section>
+</body>
+</html>
