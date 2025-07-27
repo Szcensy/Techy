@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Business</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Techbros</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    
+<h1>Welcome to TechBros 🚀</h1>
+<p><em>— Where Ideas Become Reality —</em></p>
+
+<p>In a world full of noise, we chose to <strong>create</strong>.<br>
+In a world full of trends, we chose to <strong>build</strong>.<br>
+At TechBros, every line of code is a brushstroke, every game a universe, and every visitor a spark that lights our mission.</p>
+
+<hr>
+
+<h2>🎮 Gaming isn’t just fun, it’s expression.</h2>
+<p>We explore stories, strategy, and creativity through games.<br>
+From controller to keyboard, we chase the thrill of the digital realm.</p>
+
+<h2>💻 Web development isn’t just code, it’s creation.</h2>
+<p>We build websites that speak, move, and breathe.<br>
+We write the language of the internet with purpose, passion, and personality.</p>
+
+<h2>✨ Who are we?</h2>
+<p>We’re dreamers.<br>
+We’re builders.<br>
+We’re a small team with a big heart, redefining what it means to be a <strong>TechBro</strong>.</p>
+
+<p>If you’re curious, creative, or just a little nerdy — welcome home.</p>
+
+    <div class="carousel">
+  <img id="carousel-image" src="11.jpg" alt="Game 1" />
+</div>
+
+    <h2>Where Passion Meets Innovation</h2>
+    <p>At TechBros, we're not just tech-savvy — we're tech-obsessed. Our mission is simple: <em>build, play, and innovate</em>. Whether you're a fellow developer, a gaming enthusiast, or just curious about how websites work, you're in the right place.</p>
+
+    <h3>💡 What We Do:</h3>
+    <ul>
+      <li>We develop sleek, responsive, and powerful websites.</li>
+      <li>We explore the thrilling world of gaming — from reviews to builds.</li>
+      <li>We share tips, tricks, and tutorials to help YOU grow.</li>
+    </ul>
+
+    <h3>🎮 Gaming Is Our Playground:</h3>
+    <p>From console classics to indie gems, we dive deep into what makes a game great. Expect walkthroughs, livestreams, and even our own game concepts soon!</p>
+      </section>
+
+  <script>
+  const images = ['11.jpg', '2.jpg', '3.jpg'];
+  let i = 0;
+  const carouselImage = document.getElementById('carousel-image');
+
+  setInterval(() => {
+    i = (i + 1) % images.length;
+    carouselImage.src = images[i];
+  }, 3000); // changes image every 3 seconds
+</script>
+</body>
+  </html>
+  
